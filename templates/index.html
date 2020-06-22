@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_app %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+{% endblock css_app %}
+
+
+{% block header %}
+<div class="jumbotron jumbotron-fluid overlay">
+  <div class="container text-white text-left">
+    <h1 class="display-4">{{judul}}</h1>
+    <p class="lead">{{subJudul}}</p>
+  </div>
+</div>
+
+
+{% endblock header %}
+
+
+
+
+
+
+{% block content-1 %}
+
+<!-- info panel -->
+
+<div class="row justify-content-center">
+  <div class="col-10  info-panel bg-white">
+    <div class="row">
+      <div class="col-lg text-center">
+        <img src="{% static 'img/120px/employee.png' %} " alt="employee">
+        <h5>24 Hours</h5>
+        <h5>Customer Service</h5>
+      </div>
+      <div class="col-lg text-center">
+        <img src="{% static 'img/120px/truck.png' %} " alt="truck">
+        <h5>Rapid</h5>
+        <h5>Shipping Time</h5>
+      </div>
+      <div class="col-lg text-center">
+        <img src="{% static 'img/120px/location.png' %} " alt="location">
+        <h5>Nation-wide</h5>
+        <h5>Coverage</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end info panel -->
+
+<!-- feature panel -->
+
+<div class="row feature-panel">
+  <div class="col-lg">
+    <img src="{% static 'img/book2.jpeg' %} " alt="book" class="img-fluid">
+  </div>
+  <div class="col-lg">
+    <h3> Ratusan Koleksi Buku Insightful</h3>
+    <p>Dengan ratusan koleksi buku yang bisa memberimu wawasan baru yang akan membawamu ke petualangan baru</p>
+    <a href="{% url 'shop:index' %}" class="btn btn-success tombol">Shop now!</a>
+  </div>
+</div>
+
+<!-- end feature panel -->
+
+
+
+
+{% endblock content-1 %}
+  
+
+

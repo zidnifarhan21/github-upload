@@ -1,0 +1,47 @@
+.jumbotron {
+    background-image: url("/static/shop/img/headerShop.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+.carousel-inner img {
+    margin: auto;
+    height: 200px;
+  }
+
+.carousel-inner {
+    margin-top: 150px;
+}
+
+h1.display-4 {
+    margin-top: 100px;
+}
+
+.card-text {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline;
+}
+
+.btn {
+    border-radius: 25px;
+}
+
+.book-view h5 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.book-view p {
+    font-size: 17px;
+    color: darkgray;
+}
+
+p.card-text {
+    margin: 0px;
+}
